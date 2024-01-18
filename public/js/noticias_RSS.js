@@ -4,6 +4,7 @@ $(document).ready(function () {
 
 async function cargarNoticias() {
     try {
+        //La función fetch permite realizar una solicitud asíncrona a un sitio. En este caso, a /rss
         const response = await fetch('/rss');
         const noticias = await response.json();
 
