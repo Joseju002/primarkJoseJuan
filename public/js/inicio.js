@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
+    //Leemos el fichero JSON que se encuentra en la misma carpeta
     var jsonFile = 'salida.json';
 
+    //Hacemos la función fetch, para devolver una promesa en formato JSON mediante una petición HTTP
     fetch(jsonFile)
-        .then(response => response.json())
-        .then(data => displayProducts(data))
-        .catch(error => console.error('Error:', error));
+        .then(response => response.json()) //Obtenemos la respuesta, en formato JSON
+        .then(data => displayProducts(data)) //Mostramos los productos
+        .catch(error => console.error('Error:', error)); //En caso de error
 });
 
 function displayProducts(products) {
