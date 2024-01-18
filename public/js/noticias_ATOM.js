@@ -20,7 +20,7 @@ async function cargarNoticias() {
                 html += '<h2 class="mb-3">' + entry.title + '</h2>';
                 html += '<p class="mb-3">' + entry.summary + '</p>';
                 html += '<p class="text-muted mb-3"><strong>Fecha de publicación:</strong> ' + entry.updated + '</p>';
-                html += '<a href="' + entry.link[1].href + '" target="_blank">Leer más</a>';
+                html += '<a href="' + entry.link[1]._ + '" target="_blank">Leer más</a>';
                 html += '</div>';
             });
 

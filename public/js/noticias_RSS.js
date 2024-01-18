@@ -20,7 +20,7 @@ async function cargarNoticias() {
                 html += '<h2>' + item.title + '</h2>';
                 html += '<p>' + item.description + '</p>';
                 html += '<p><strong>Fecha de publicación:</strong> ' + item.pubDate + '</p>';
-                html += '<a href="' + item.link[1]._ + '" target="_blank">Leer más</a>';
+                html += '<a href="' + item.link + '" target="_blank">Leer más</a>';
                 html += '</div>';
             });
 
